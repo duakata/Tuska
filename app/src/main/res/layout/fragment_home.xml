@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+   <LinearLayout
+       android:id="@+id/layoutTop"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="12dp"
+       android:background="@drawable/grey_border">
+
+      <TextView
+          android:id="@+id/namaHome"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:text="Ragil Bayu Respati"
+          android:textColor="@android:color/black"
+          android:textSize="18dp"
+          android:layout_marginTop="2dp"
+          android:textStyle="bold" />
+
+      <ImageView
+          android:id="@+id/imagePoint"
+          android:layout_width="15dp"
+          android:layout_height="15dp"
+          android:layout_below="@id/namaHome"
+          android:layout_marginStart="10dp"
+          android:src="@drawable/ic_point_blue" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/namaHome"
+          android:layout_marginBottom="16dp"
+          android:layout_marginStart="10dp"
+          android:layout_marginLeft="-32dp"
+
+          android:layout_toRightOf="@+id/imagePoint"
+          android:text="1000 Point"
+          android:textColor="@android:color/black"
+          android:textSize="11dp"
+          />
+
+   </LinearLayout>
+   <GridView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:numColumns="auto_fit"
+       android:gravity="center"
+       android:layout_centerHorizontal="true"
+       android:columnWidth="90dp"
+       android:id="@+id/gridHome"
+       android:layout_marginTop="25dp"
+       android:layout_below="@id/layoutTop"
+
+
+       >
+
+   </GridView>
+
+   <RelativeLayout
+       android:layout_below="@id/gridHome"
+       android:layout_marginTop="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:scrollbars="horizontal"
+       >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Promo Hari Ini"
+          android:textStyle="bold"
+          android:textSize="14dp"
+          android:layout_marginStart="10dp"
+          android:id="@+id/titlePromo"
+          />
+
+
+      <ImageView
+          android:layout_below="@id/titlePromo"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginStart="10dp"
+          android:src="@drawable/promo1"
+          android:id="@+id/promo1"
+
+          />
+
+
+      <ImageView
+          android:layout_below="@id/titlePromo"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginStart="10dp"
+          android:src="@drawable/promo2"
+          android:layout_toRightOf="@+id/promo1"
+android:id="@+id/promo2"
+          />
+
+
+       <ImageView
+           android:layout_below="@id/titlePromo"
+           android:layout_width="150dp"
+           android:layout_height="150dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginStart="10dp"
+           android:src="@drawable/promo1"
+           android:layout_toRightOf="@+id/promo2"
+
+           />
+
+   </RelativeLayout>
+</RelativeLayout>

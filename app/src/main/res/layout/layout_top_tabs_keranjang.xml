@@ -1,0 +1,84 @@
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:id="@+id/tabBrand"
+                android:background="#000000"
+                >
+
+
+
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_arrowwhite"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/backArrowKeranjang"
+                    />
+
+
+
+                <TextView
+                    android:layout_toRightOf="@id/backArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="60dp"
+                    android:text="Keranjang"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/brandName"
+                    />
+
+
+
+                <android.support.design.widget.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tabs_keranjang"
+                    android:background="@color/colorFullBlack"
+
+                    app:tabTextColor="@color/colorWhite"
+                    app:tabSelectedTextColor="@color/colorWhite"
+                    app:tabTextAppearance="@style/TabLayoutStyle2"
+
+                    >
+
+                </android.support.design.widget.TabLayout>
+
+            </RelativeLayout>
+
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+    </RelativeLayout>
+
+</merge>

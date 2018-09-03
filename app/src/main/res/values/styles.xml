@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeLogin" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">#111111</item>
+    </style>
+
+    <style name="AppThemeLogin.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppThemeLogin.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeRegist" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">#111111</item>
+    </style>
+    <style name="AppThemeRegist.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppThemeRegist.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="TabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">9dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="TabLayoutStyle2" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+</resources>
