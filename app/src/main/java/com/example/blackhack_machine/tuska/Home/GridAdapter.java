@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 import com.example.blackhack_machine.tuska.R;
 
 public class GridAdapter extends BaseAdapter {
@@ -48,9 +50,9 @@ public class GridAdapter extends BaseAdapter {
            if (convertView == null){
                view = new View(context);
                view = layoutInflater.inflate(R.layout.single_item, null);
-               ImageView imageView = (ImageView) view.findViewById(R.id.imageGrid);
+               CircleImageView circleImageView = (CircleImageView) view.findViewById(R.id.imageGrid);
                TextView textView = (TextView) view.findViewById(R.id.gridText);
-               imageView.setImageResource(images[position]);
+               circleImageView.setImageResource(images[position]);
                textView.setText(values[position]);
 
            }

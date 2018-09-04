@@ -2,11 +2,11 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true">
 
 
-   <LinearLayout
+   <RelativeLayout
        android:id="@+id/layoutTop"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
           android:textSize="11dp"
           />
 
-   </LinearLayout>
+   </RelativeLayout>
    <GridView
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
@@ -65,59 +65,4 @@
 
    </GridView>
 
-   <RelativeLayout
-       android:layout_below="@id/gridHome"
-       android:layout_marginTop="10dp"
-       android:layout_width="wrap_content"
-       android:layout_height="match_parent"
-       android:scrollbars="horizontal"
-       >
-
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Promo Hari Ini"
-          android:textStyle="bold"
-          android:textSize="14dp"
-          android:layout_marginStart="10dp"
-          android:id="@+id/titlePromo"
-          />
-
-
-      <ImageView
-          android:layout_below="@id/titlePromo"
-          android:layout_width="150dp"
-          android:layout_height="150dp"
-          android:layout_marginTop="10dp"
-          android:layout_marginStart="10dp"
-          android:src="@drawable/promo1"
-          android:id="@+id/promo1"
-
-          />
-
-
-      <ImageView
-          android:layout_below="@id/titlePromo"
-          android:layout_width="150dp"
-          android:layout_height="150dp"
-          android:layout_marginTop="10dp"
-          android:layout_marginStart="10dp"
-          android:src="@drawable/promo2"
-          android:layout_toRightOf="@+id/promo1"
-android:id="@+id/promo2"
-          />
-
-
-       <ImageView
-           android:layout_below="@id/titlePromo"
-           android:layout_width="150dp"
-           android:layout_height="150dp"
-           android:layout_marginTop="10dp"
-           android:layout_marginStart="10dp"
-           android:src="@drawable/promo1"
-           android:layout_toRightOf="@+id/promo2"
-
-           />
-
-   </RelativeLayout>
 </RelativeLayout>

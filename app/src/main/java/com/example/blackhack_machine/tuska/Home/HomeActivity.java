@@ -95,7 +95,7 @@ public class HomeActivity extends AppCompatActivity {
     private void setupViewPager(){
     SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new HomeFragment()); //index 0
-        adapter.addFragment(new CameraFragment()); // index 1
+        adapter.addFragment(new TrafficFragment()); // index 1
         adapter.addFragment(new StatusProjectFragment()); // index 2
         adapter.addFragment(new ProfileFragment()); // index 2
         ViewPager viewpager = (ViewPager) findViewById(R.id.container_home);
