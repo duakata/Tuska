@@ -1,18 +1,17 @@
-package com.example.blackhack_machine.tuska.Home;
+package com.example.blackhack_machine.tuska.Upgrade;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 
 import com.example.blackhack_machine.tuska.R;
 
-public class GridAdapter extends BaseAdapter {
+import de.hdodenhof.circleimageview.CircleImageView;
+
+public class GridAdapterUpgradeHome extends BaseAdapter {
 
     Context context;
     private final String [] values;
@@ -21,7 +20,7 @@ public class GridAdapter extends BaseAdapter {
     LayoutInflater layoutInflater;
 
 
-    public GridAdapter(Context context, String[] values,  int[] images) {
+    public GridAdapterUpgradeHome(Context context, String[] values, int[] images) {
         this.values = values;
         this.context = context;
         this.images = images;
@@ -49,9 +48,9 @@ public class GridAdapter extends BaseAdapter {
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
            if (convertView == null){
                view = new View(context);
-               view = layoutInflater.inflate(R.layout.single_item, null);
-               CircleImageView circleImageView = (CircleImageView) view.findViewById(R.id.imageGrid);
-               TextView textView = (TextView) view.findViewById(R.id.gridText);
+               view = layoutInflater.inflate(R.layout.single_item_upgradehome, null);
+               CircleImageView circleImageView = (CircleImageView) view.findViewById(R.id.imageGridUpgradeHome);
+               TextView textView = (TextView) view.findViewById(R.id.gridTextUpgradeHome);
                circleImageView.setImageResource(images[position]);
                textView.setText(values[position]);
 

@@ -114,7 +114,7 @@ public class ProfileFragment extends Fragment {
     private void getUserDetail() {
         final ProgressDialog progressDialog = new ProgressDialog(getActivity());
         progressDialog.setMessage("Loading....");
-        progressDialog.show();
+        //progressDialog.show();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, PublicURL.URL_PROFILE_GETDETAIL,
                 new Response.Listener<String>() {
@@ -163,7 +163,7 @@ public class ProfileFragment extends Fragment {
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            progressDialog.dismiss();
+                            //progressDialog.dismiss();
                             Toast.makeText(getActivity(), "Error Reading "+e.toString(), Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -171,7 +171,7 @@ public class ProfileFragment extends Fragment {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        progressDialog.dismiss();
+                        //progressDialog.dismiss();
                         Toast.makeText(getActivity(), "Error Reading "+error.toString(), Toast.LENGTH_SHORT).show();
                     }
                 }) {
@@ -191,7 +191,7 @@ public class ProfileFragment extends Fragment {
     private void getCountProjects() {
         final ProgressDialog progressDialog = new ProgressDialog(getActivity());
         progressDialog.setMessage("Tunggu Sebentar....");
-        progressDialog.show();
+        //progressDialog.show();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, PublicURL.URL_PROFILE_COUNT_PROJECT,
                 new Response.Listener<String>() {
@@ -216,7 +216,7 @@ public class ProfileFragment extends Fragment {
 
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            progressDialog.dismiss();
+                            //progressDialog.dismiss();
                             Toast.makeText(getActivity(), "Error Reading "+e.toString(), Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -224,7 +224,7 @@ public class ProfileFragment extends Fragment {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        progressDialog.dismiss();
+                       // progressDialog.dismiss();
                         Toast.makeText(getActivity(), "Error Reading "+error.toString(), Toast.LENGTH_SHORT).show();
                     }
                 }) {
@@ -246,7 +246,7 @@ public class ProfileFragment extends Fragment {
     private void getCountProses() {
         final ProgressDialog progressDialog = new ProgressDialog(getActivity());
         progressDialog.setMessage("Tunggu Sebentar....");
-        progressDialog.show();
+        //progressDialog.show();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, PublicURL.URL_PROFILE_COUNT_PROSES,
                 new Response.Listener<String>() {
@@ -270,7 +270,7 @@ public class ProfileFragment extends Fragment {
 
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            progressDialog.dismiss();
+                           // progressDialog.dismiss();
                             Toast.makeText(getActivity(), "Error Reading "+e.toString(), Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -278,7 +278,7 @@ public class ProfileFragment extends Fragment {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        progressDialog.dismiss();
+                        //progressDialog.dismiss();
                         Toast.makeText(getActivity(), "Error Reading "+error.toString(), Toast.LENGTH_SHORT).show();
                     }
                 }) {
@@ -298,7 +298,7 @@ public class ProfileFragment extends Fragment {
     private void getCountDone() {
         final ProgressDialog progressDialog = new ProgressDialog(getActivity());
         progressDialog.setMessage("Tunggu Sebentar....");
-        progressDialog.show();
+        //progressDialog.show();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, PublicURL.URL_PROFILE_COUNT_DONE,
                 new Response.Listener<String>() {
@@ -324,7 +324,7 @@ public class ProfileFragment extends Fragment {
 
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            progressDialog.dismiss();
+                            //progressDialog.dismiss();
                             Toast.makeText(getActivity(), "Error Reading "+e.toString(), Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -332,7 +332,7 @@ public class ProfileFragment extends Fragment {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        progressDialog.dismiss();
+                        //progressDialog.dismiss();
                         Toast.makeText(getActivity(), "Error Reading "+error.toString(), Toast.LENGTH_SHORT).show();
                     }
                 }) {

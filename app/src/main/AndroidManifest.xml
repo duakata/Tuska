@@ -32,6 +32,7 @@
         <activity android:name=".Profile.ProfileActivity"></activity>
         <activity android:name=".Profile.AccountSettingsActivity"></activity>
         <activity android:name=".Keranjang.KeranjangActivity"></activity>
+        <activity android:name=".Upgrade.UpgradeActivity"></activity>
     </application>
 
 </manifest>

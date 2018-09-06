@@ -1,40 +1,45 @@
 package com.example.blackhack_machine.tuska.Home;
 
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.example.blackhack_machine.tuska.Keranjang.KeranjangActivity;
 import com.example.blackhack_machine.tuska.R;
+import com.example.blackhack_machine.tuska.Upgrade.UpgradeActivity;
 
 
 public class HomeFragment extends Fragment {
-
+  private Context mContext = getActivity();
   GridView gridView;
 
   String[] values = {
-    "Order Android",
-          "Order Desktop",
-          "Order Website",
-          "Open Ticket",
+          "Buat Toko",
+          "Kelola Toko",
+          "Upgrade Toko",
           "Store Social",
-          "Point Saya",
+          "Tukar Point",
+          "Open Tiket",
           "Bantuan"
   };
 
   int[] images = {
-    R.drawable.ic_android_green,
-          R.drawable.ic_desktop_blue,
-          R.drawable.ic_website_orange,
-          R.drawable.ic_opentiket_brown,
-          R.drawable.ic_storesocial_purple,
-          R.drawable.ic_point_blue,
-          R.drawable.ic_help_pink
+    R.drawable.ic_store_small,
+          R.drawable.ic_kelola_small,
+          R.drawable.ic_upgrade_small,
+          R.drawable.ic_storesocial_small,
+          R.drawable.ic_point_small,
+          R.drawable.ic_tiket_small,
+          R.drawable.ic_help_small
   };
   private static final String ARG_PARAM1 = "params";
 
@@ -56,6 +61,39 @@ public class HomeFragment extends Fragment {
 
     GridAdapter gridAdapter = new GridAdapter(getActivity(), values, images);
     gridView.setAdapter(gridAdapter);
+
+    gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+      @Override
+      public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+        switch (position) {
+          case 0: //BUKA TOKO
+              Intent intent0 = new Intent(getActivity(), KeranjangActivity.class);
+              getActivity().startActivity(intent0);
+              break;
+          case 1: //KELOLA TOKO
+              break;
+          case 2: //UPGRADE TOKO
+            Intent intent2 = new Intent(getActivity(), UpgradeActivity.class);
+            getActivity().startActivity(intent2);
+              break;
+          case 3: //STORE SOCIAL
+              break;
+          case 4: //TUKAR POINT
+            break;
+          case 5: //OPEN TIKET
+            break;
+          case 6: //BANTUAN
+            break;
+        }
+      }
+    });
+
     return view;
+
+
   }
+
+
+
 }
