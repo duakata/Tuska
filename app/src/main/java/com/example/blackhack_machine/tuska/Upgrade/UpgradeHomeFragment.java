@@ -51,14 +51,14 @@ public class UpgradeHomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_upgrade_home, container, false);
-        viewPager = (ViewPager) view.findViewById(R.id.view_pager);
+       /* viewPager = (ViewPager) view.findViewById(R.id.container_upgrade);
         adapter = new SwipeImageHome(this.getActivity());
         viewPager.setAdapter(adapter);
 
-        //gridView = (GridView) view.findViewById(R.id.gridUpgradeHome);
+        gridView = (GridView) view.findViewById(R.id.gridUpgadeHome);
 
-       // GridAdapter gridAdapter = new GridAdapter(getActivity(), values, images);
-        //gridView.setAdapter(gridAdapter);
+        GridAdapter gridAdapter = new GridAdapter(getActivity(), values, images);
+        gridView.setAdapter(gridAdapter);*/
         return view;
     }
 

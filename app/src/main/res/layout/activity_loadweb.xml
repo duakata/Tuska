@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TOP TOOLBAR -->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorWhite"
+            android:id="@+id/rel1"
+            >
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/tabBrand"
+                    android:background="#000000"
+
+
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/ic_arrowwhite"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/backArrowUpgrade"
+                        />
+
+
+
+                    <TextView
+                        android:layout_toRightOf="@id/backArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="60dp"
+                        android:text="Preview Store"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/brandName"
+                        android:layout_marginBottom="10dp"
+                        />
+
+
+                </RelativeLayout>
+            </android.support.design.widget.AppBarLayout>
+        </RelativeLayout>
+
+
+        <!-- MIDDLE SECTION -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rel1">
+
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/webView">
+
+            </WebView>
+
+        </RelativeLayout>
+
+        <!-- BOTTOM TOOLBAR -->
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

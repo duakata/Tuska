@@ -3,40 +3,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <android.support.v4.view.ViewPager
-        android:id="@+id/view_pager"
+        android:id="@+id/view_pager_upgradehome"
         android:layout_width="match_parent"
-        android:layout_height="180dp"/>
+        android:layout_height="180dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="190dp">
 
-        <TextView
-            android:id="@+id/txtPointUpgrade"
+        <GridView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:text="Upgrade Terinstall"
-            android:textColor="@color/colorFullBlack"
-            android:textSize="14dp"
-            android:textStyle="bold"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/grey_border"/>
-
-
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Tidak ada plugin terinstall"
-       android:layout_below="@id/txtPointUpgrade"
-       android:layout_centerVertical="true"
-       android:layout_centerHorizontal="true"
-       android:layout_marginTop="60dp"
-       />
+            android:numColumns="auto_fit"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:columnWidth="90dp"
+            android:id="@+id/gridUpgadeHome"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/layoutTop">
+        </GridView>
 
 
     </RelativeLayout>

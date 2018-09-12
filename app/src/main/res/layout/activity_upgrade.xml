@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     >
 
 
@@ -14,25 +15,166 @@
         android:layout_height="match_parent">
         <!-- TOP TOOLBAR -->
         <RelativeLayout
-            android:id="@+id/relLayout1"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary">
+            android:layout_alignParentTop="true"
+            android:background="@color/colorWhite"
+            android:id="@+id/rel1"
+            >
 
-            <include layout="@layout/layout_top_tabs_upgrade" />
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/tabBrand"
+                    android:background="#000000"
+
+
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/ic_arrowwhite"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/backArrowUpgrade"
+                        />
+
+
+
+                    <TextView
+                        android:layout_toRightOf="@id/backArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="60dp"
+                        android:text="Upgrade Toko"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/brandName"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:id="@+id/shopImage"
+                        android:src="@drawable/ic_shoppp_white"
+                        android:layout_marginTop="12dp"
+                        android:layout_alignParentRight="true"
+                        />
+                </RelativeLayout>
+            </android.support.design.widget.AppBarLayout>
         </RelativeLayout>
 
 
         <!-- MIDDLE SECTION -->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/relLayout2"
-            android:layout_below="@id/relLayout1"
-            android:background="@color/colorWhite"
-            >
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel1">
 
-            <include layout="@layout/layout_center_viewpager_upgrade"/>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager_upgradehome"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dotSlide"
+                android:layout_marginTop="-15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:layout_below="@id/view_pager_upgradehome"
+                >
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layoutTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/view_pager_upgradehome"
+                android:background="@drawable/grey_border">
+
+
+                <ImageView
+                    android:id="@+id/imagePoint"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/namaHome"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_install_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/namaHome"
+
+                    android:layout_marginLeft="-42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/imagePoint"
+                    android:text="0 Upgrade"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+
+                    android:id="@+id/pointText"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pointText"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="-32dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/imagePoint"
+                    android:text="Total Upgrade Terinstall"
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/layoutTop">
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="auto_fit"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:columnWidth="90dp"
+                    android:id="@+id/gridUpgadeHome"
+                    android:layout_marginTop="15dp"
+                    >
+                </GridView>
+
+            </RelativeLayout>
         </RelativeLayout>
 
         <!-- BOTTOM TOOLBAR -->

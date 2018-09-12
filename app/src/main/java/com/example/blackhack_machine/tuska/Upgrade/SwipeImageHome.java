@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.example.blackhack_machine.tuska.R;
 
 public class SwipeImageHome extends PagerAdapter {
-    private int[] image_resource = {R.drawable.promo4, R.drawable.promo3, R.drawable.promo2, R.drawable.promo1};
+    private int[] image_resource = {R.drawable.promo2, R.drawable.promo1};
     private Context ctx;
     private LayoutInflater layoutInflater;
 
@@ -33,8 +33,8 @@ public class SwipeImageHome extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         layoutInflater = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View item_view = layoutInflater.inflate(R.layout.upgradehome_layout_swipe, container, false);
-        ImageView imageview = (ImageView) item_view.findViewById(R.id.image_view);
+        View item_view = layoutInflater.inflate(R.layout.activity_upgrade, container, false);
+        ImageView imageview = (ImageView) item_view.findViewById(R.id.image_view_upgradehome);
         //TextView textView = (TextView)  item_view.findViewById(R.id.image_count);
         imageview.setImageResource(image_resource[position]);
         imageview.setScaleType(ImageView.ScaleType.FIT_XY);

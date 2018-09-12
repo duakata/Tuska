@@ -48,7 +48,7 @@ public class GridAdapterUpgradeHome extends BaseAdapter {
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
            if (convertView == null){
                view = new View(context);
-               view = layoutInflater.inflate(R.layout.single_item_upgradehome, null);
+               view = layoutInflater.inflate(R.layout.upgradehome_single_item, null);
                CircleImageView circleImageView = (CircleImageView) view.findViewById(R.id.imageGridUpgradeHome);
                TextView textView = (TextView) view.findViewById(R.id.gridTextUpgradeHome);
                circleImageView.setImageResource(images[position]);

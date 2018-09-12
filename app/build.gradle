@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.example.blackhack_machine.tuska"
-        minSdkVersion 21
+        minSdkVersion 19
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -15,7 +15,7 @@ android {
     productFlavors {
         itconfig {
             applicationId 'com.example.it.tuska'
-            minSdkVersion 21
+            minSdkVersion 19
             targetSdkVersion 27
             versionCode 1
             versionName "1.0"

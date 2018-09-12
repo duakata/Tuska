@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="@color/colorWhite">
+        android:background="@color/colorWhite"
+       >
 
 
         <android.support.design.widget.AppBarLayout
@@ -52,25 +53,20 @@
                     android:textSize="20sp"
                     android:textColor="@color/colorWhite"
                     android:id="@+id/brandName"
+                    android:layout_marginBottom="10dp"
                     />
 
 
-
-                <android.support.design.widget.TabLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="55dp"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/tabs_upgrade"
-                    android:background="@color/colorFullBlack"
-
-                    app:tabTextColor="@color/colorWhite"
-                    app:tabSelectedTextColor="@color/colorWhite"
-                    app:tabTextAppearance="@style/TabLayoutStyle2"
-
-                    >
-
-                </android.support.design.widget.TabLayout>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/shopImage"
+                    android:src="@drawable/ic_shoppp_white"
+                    android:layout_marginTop="12dp"
+                    android:layout_alignParentRight="true"
+                    />
 
             </RelativeLayout>
 

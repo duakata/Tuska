@@ -33,6 +33,7 @@
         <activity android:name=".Profile.AccountSettingsActivity"></activity>
         <activity android:name=".Keranjang.KeranjangActivity"></activity>
         <activity android:name=".Upgrade.UpgradeActivity"></activity>
+        <activity android:name=".Home.PreviewWebActivity"></activity>
     </application>
 
 </manifest>

@@ -1,6 +1,7 @@
 package com.example.blackhack_machine.tuska.Keranjang;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -8,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -18,6 +20,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.blackhack_machine.tuska.Home.PreviewWebActivity;
 import com.example.blackhack_machine.tuska.PublicURL;
 import com.example.blackhack_machine.tuska.R;
 import com.example.blackhack_machine.tuska.SessionManager;
@@ -52,6 +55,18 @@ public class StatusProjectFragment extends Fragment {
     listView = (ListView) view.findViewById(R.id.listView);
     projectList = new ArrayList<>();
     getUserDetail();
+/*
+    listView.setOnClickListener(new AdapterView.OnItemClickListener() {
+      @Override
+      public  void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+          String Templistview = listViewItem[position].toString();
+      }
+      }
+
+    }*/
+
+
+
     return view;
 
   }
@@ -113,6 +128,9 @@ public class StatusProjectFragment extends Fragment {
   }
 
 
-
+  public void loadWebPage (View v){
+    Intent intent = new Intent(getActivity(), PreviewWebActivity.class);
+    startActivity(intent);
+  }
 }
 
